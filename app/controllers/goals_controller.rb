@@ -4,7 +4,7 @@ class GoalsController < ApplicationController
 
   # GET /goals
   def index
-   @goals = current_user.goals.all
+   @goals = Goal.all
   end
 
 
