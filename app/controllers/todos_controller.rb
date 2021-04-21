@@ -47,7 +47,7 @@ class TodosController < ApplicationController
   private
 
  def set_goal
-   @goal = current_user.goals.find_by(id: params[:goal_id])
+   @goal = Goal.all.find_by(id: params[:goal_id])
    redirect_to(goals_url, alert: "ERROR!!") if @goal.blank?
  end
 

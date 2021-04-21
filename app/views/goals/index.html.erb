@@ -1,9 +1,11 @@
-<div class="goal-title-area px-3">
+<div class="bg-home ">
+<div class="goal-title-area px-3 bg-home moji-color">
   <h1>手伝ってほしいこと</h1>
   <%= link_to new_goal_path, title: "New", class: "btn p-0 text-dark", remote: true do %>
-    <i class="fas fa-plus align-middle pr-1"></i><span class="align-middle">新しく書き込む</span>
+    <i class="fas fa-plus align-middle pr-1"></i><span class="align-middle moji-color">新しく書き込む</span>
   <% end %>
 </div>
 <div class="pt-3 p-1 text-nowrap goal-index-area" id="goalsIndex">
   <%= render @goals %>
+</div>
 </div>
